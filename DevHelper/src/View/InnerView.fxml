@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane layoutX="-7.0" maxHeight="1080.0" maxWidth="800.0" minHeight="1080.0" minWidth="800.0" prefHeight="1080.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.InnerController">
+   <children>
+      <ListView fx:id="listView" editable="true" fixedCellSize="0.0" layoutX="32.0" layoutY="161.0" onMouseClicked="#mouseClick" prefHeight="919.0" prefWidth="272.0" AnchorPane.bottomAnchor="150.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="513.0" AnchorPane.topAnchor="160.0" />
+      <TextArea fx:id="textArea" layoutX="296.0" layoutY="161.0" onKeyReleased="#textChange" prefHeight="919.0" prefWidth="494.0" AnchorPane.bottomAnchor="150.0" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="160.0">
+         <font>
+            <Font size="14.0" />
+         </font></TextArea>
+      <HBox layoutX="42.0" layoutY="80.0" prefHeight="60.0" prefWidth="500.0" spacing="55.0" AnchorPane.bottomAnchor="940.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="80.0">
+         <children>
+            <Button fx:id="refreshButton" maxHeight="1.7976931348623157E308" minHeight="60.0" minWidth="150.0" mnemonicParsing="false" onAction="#loadList" prefWidth="150.0" text="refresh List..." />
+            <Button fx:id="findButton" maxHeight="1.7976931348623157E308" minHeight="60.0" minWidth="150.0" mnemonicParsing="false" onAction="#find" prefWidth="150.0" text="find in list..." />
+            <Button fx:id="sortButton" maxHeight="1.7976931348623157E308" minHeight="60.0" minWidth="150.0" mnemonicParsing="false" onAction="#sortList" prefWidth="150.0" text="sort list..." />
+            <Button fx:id="backButton" maxHeight="1.7976931348623157E308" minHeight="60.0" minWidth="150.0" mnemonicParsing="false" onAction="#backToMain" prefHeight="0.0" prefWidth="150.0" text="back..." />
+         </children>
+      </HBox>
+      <Label alignment="CENTER" layoutX="110.0" layoutY="14.0" prefHeight="47.0" prefWidth="400.0" text="Choose your Topic" textFill="WHITE" AnchorPane.bottomAnchor="1000.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font name="Arial" size="36.0" />
+         </font>
+      </Label>
+      <HBox layoutX="14.0" layoutY="963.0" prefHeight="60.0" prefWidth="500.0" spacing="55.0" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="960.0">
+         <children>
+            <Button fx:id="newButton" maxHeight="1.7976931348623157E308" minHeight="60.0" minWidth="150.0" mnemonicParsing="false" onAction="#openAddNewItem" prefWidth="150.0" text="add new..." />
+            <Button fx:id="removeButton" maxHeight="1.7976931348623157E308" minHeight="60.0" minWidth="150.0" mnemonicParsing="false" onAction="#removeItem" prefWidth="150.0" text="remove Item..." />
+            <Button fx:id="saveButton" maxHeight="1.7976931348623157E308" minHeight="60.0" minWidth="150.0" mnemonicParsing="false" onAction="#saveAll" prefWidth="150.0" text="save all..." />
+            <Button fx:id="loadButton" maxHeight="1.7976931348623157E308" minHeight="60.0" minWidth="150.0" mnemonicParsing="false" onAction="#loadAll" prefHeight="0.0" prefWidth="150.0" text="load list..." />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

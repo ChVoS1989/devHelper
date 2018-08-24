@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane layoutX="-7.0" maxHeight="1080" maxWidth="800.0" minHeight="1080.0" minWidth="800.0" prefHeight="1080.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MainController">
+   <children>
+      <Label fx:id="labelMain" alignment="CENTER" prefHeight="67.0" prefWidth="400.0" text="Choose your Language" textFill="WHITE" AnchorPane.bottomAnchor="1000.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="0.0">
+          <font>
+            <Font name="Arial Bold" size="36.0" />
+         </font>
+      </Label>
+      <VBox layoutX="14.0" layoutY="67.0" maxWidth="256.0" minWidth="256.0" prefHeight="918.0" prefWidth="256.0" spacing="75.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="528.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <Button fx:id="javaButton" alignment="BOTTOM_CENTER" maxHeight="256.0" maxWidth="256.0" minHeight="256.0" minWidth="256.0" mnemonicParsing="false" onAction="#loadInnerViewJava" prefHeight="256.0" prefWidth="256.0" text="Java" textFill="#eb3d3d">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="cppButton" alignment="BOTTOM_CENTER" maxHeight="256.0" maxWidth="256.0" minHeight="256.0" minWidth="256.0" mnemonicParsing="false" onAction="#loadInnerViewCpp" prefHeight="256.0" prefWidth="256.0" text="C++" textFill="#eb3d3d">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="htmlcssButton" alignment="BOTTOM_CENTER" maxHeight="256.0" maxWidth="256.0" minHeight="256.0" minWidth="256.0" mnemonicParsing="false" onAction="#loadInnerViewHtmlcss" prefHeight="256.0" prefWidth="256.0" text="HTML/CSS" textFill="#eb3d3d">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <VBox layoutX="280.0" layoutY="70.0" maxWidth="256.0" minWidth="256.0" prefHeight="918.0" prefWidth="256.0" spacing="75.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="272.0" AnchorPane.rightAnchor="272.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <Button fx:id="javaFXButton" alignment="BOTTOM_CENTER" maxHeight="256.0" maxWidth="256.0" minHeight="256.0" minWidth="256.0" mnemonicParsing="false" onAction="#loadInnerViewJavaFx" prefHeight="256.0" prefWidth="256.0" text="JavaFX" textFill="#eb3d3d">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="csButton" alignment="BOTTOM_CENTER" maxHeight="256.0" maxWidth="256.0" minHeight="256.0" minWidth="256.0" mnemonicParsing="false" onAction="#loadInnerViewCs" prefHeight="256.0" prefWidth="256.0" text="C#" textFill="#eb3d3d">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="javascriptButton" alignment="BOTTOM_CENTER" maxHeight="256.0" maxWidth="256.0" minHeight="256.0" minWidth="256.0" mnemonicParsing="false" onAction="#loadInnerViewJavascript" prefHeight="256.0" prefWidth="256.0" text="JavaScript" textFill="#eb3d3d">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <VBox layoutX="536.0" layoutY="70.0" maxWidth="256.0" minWidth="256.0" prefHeight="916.0" prefWidth="256.0" spacing="75.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="528.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <Button fx:id="androidButton" alignment="BOTTOM_CENTER" maxHeight="256.0" maxWidth="256.0" minHeight="256.0" minWidth="256.0" mnemonicParsing="false" onAction="#loadInnerViewAndroid" prefHeight="256.0" prefWidth="256.0" text="Android" textFill="#eb3d3d">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="pythonButton" alignment="BOTTOM_CENTER" maxHeight="256.0" maxWidth="256.0" minHeight="256.0" minWidth="256.0" mnemonicParsing="false" onAction="#loadInnerViewPython" prefHeight="256.0" prefWidth="256.0" text="Python" textFill="#eb3d3d">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="phpButton" alignment="BOTTOM_CENTER" maxHeight="256.0" maxWidth="256.0" minHeight="256.0" minWidth="256.0" mnemonicParsing="false" onAction="#loadInnerViewPhp" prefHeight="256.0" prefWidth="256.0" text="PHP" textFill="#eb3d3d">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,63 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+AnchorPane{
+	-fx-background-image: url("/images/background.png");
+	
+}
+
+
+
+
+#javaButton{
+	-fx-background-image: url("/images/java.png");
+	-fx-background-color: transparent;	
+}
+
+#javaFXButton{
+	-fx-background-image: url("/images/javafx.png");
+	-fx-background-color: transparent;	
+}
+
+#androidButton{
+	-fx-background-image: url("/images/android.png");
+	-fx-background-color: transparent;	
+}
+
+#cppButton{
+	-fx-background-image: url("/images/cpp.png");
+	-fx-background-color: transparent;	
+}
+
+#csButton{
+	-fx-background-image: url("/images/cs.png");
+	-fx-background-color: transparent;	
+}
+
+
+#pythonButton{
+	-fx-background-image: url("/images/python.png");
+	-fx-background-color: transparent;	
+}
+
+#htmlcssButton{
+	-fx-background-image: url("/images/htmlcss.png");
+	-fx-background-color: transparent;	
+}
+
+#javascriptButton{
+	-fx-background-image: url("/images/javascript.png");
+	-fx-background-color: transparent;	
+}
+
+#phpButton{
+	-fx-background-image: url("/images/php.png");
+	-fx-background-color: transparent;	
+}
+
+
+
+Button:hover{
+	-fx-scale-x: 1.2;
+	-fx-scale-y: 1.2;
+	
+}
